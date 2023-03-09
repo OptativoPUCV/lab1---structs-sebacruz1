@@ -27,7 +27,7 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) 
 {
-      
+
 }
 
 
@@ -48,7 +48,7 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona * p = (Persona *) malloc(sizeof(Persona));
   //asignar valores de entrada a los campos de p
-  scanf("%s", &p->nombre);
+  scanf("%[^10/n]s", &p->nombre);
   scanf("%s", &p->rut);
   scanf("%d", &p->edad);
   
