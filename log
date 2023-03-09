@@ -14,3 +14,14 @@ exercises.c:19:7: error: invalid type argument of unary ‘*’ (have ‘int’)
       |       ^~~~~
 Compilation failed
 78643a2
+Thu 09 Mar 2023 04:16:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:19:5: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   19 |   a = temp;
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+58e7c48
