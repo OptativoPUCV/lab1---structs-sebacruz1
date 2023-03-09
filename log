@@ -4,3 +4,13 @@ Thu 09 Mar 2023 03:50:45 PM UTC:
  tests:  0|7
 total_score: 0/70
 06b5c26
+Thu 09 Mar 2023 04:16:26 PM UTC: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:19:7: error: invalid type argument of unary ‘*’ (have ‘int’)
+   19 |   a = *temp;
+      |       ^~~~~
+Compilation failed
+78643a2
