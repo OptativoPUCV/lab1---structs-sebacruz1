@@ -149,5 +149,6 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
 {
   int resultado = (a1 + a2) + (b1 + b2);
 
-  c->datos = resultado;
+  for (int i = 0; i < 10; i++)
+    c->datos[i] = resultado;
 }
