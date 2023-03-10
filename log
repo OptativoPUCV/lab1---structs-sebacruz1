@@ -373,3 +373,14 @@ exercises.c:109:3: error: invalid type argument of unary ‘*’ (have ‘int’
       |   ^~~~~~~~~~~~
 Compilation failed
 5a4ce31
+Fri 10 Mar 2023 02:09:41 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:109:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
+  109 |   v.datos[i] = valor;
+      |    ^
+      |    ->
+Compilation failed
+b5c6836
