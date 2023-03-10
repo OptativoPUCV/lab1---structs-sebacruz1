@@ -313,3 +313,15 @@ exercises.c:88:27: error: expected expression before ‘)’ token
       |                           ^
 Compilation failed
 802778d
+Fri 10 Mar 2023 02:02:36 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:47: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   88 |   Vector *temp = (Vector *) malloc(n * sizeof(vector));
+      |                                               ^~~~~~
+      |                                               Vector
+exercises.c:88:47: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0c36a3e
