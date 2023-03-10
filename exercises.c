@@ -88,7 +88,14 @@ Vector * crearVector(int n) {
   Vector *temp = (Vector *) malloc(n * sizeof(Vector));
   if (temp == NULL)
     return NULL;
-
+  temp->datos = malloc(n * sizeof(int));
+  if (temp->datos == NULL)
+  {
+    free();
+    return NULL;
+  }  
+  temp->capacidad = n;
+    
   return temp;
 }
 
