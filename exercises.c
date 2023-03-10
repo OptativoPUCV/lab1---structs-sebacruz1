@@ -91,7 +91,7 @@ Vector * crearVector(int n) {
   temp->datos = malloc(n * sizeof(int));
   if (temp->datos == NULL)
   {
-    free();
+    free(temp);
     return NULL;
   }  
   temp->capacidad = n;
