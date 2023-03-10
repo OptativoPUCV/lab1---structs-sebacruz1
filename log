@@ -445,3 +445,14 @@ exercises.c:135:7: error: ‘suma’ undeclared (first use in this function); di
 exercises.c:135:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f04b65f
+Fri 10 Mar 2023 02:17:03 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:138:9: error: assignment to ‘Vector *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  138 |       c = suma;
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+3cb94ab
