@@ -510,3 +510,9 @@ exercises.c:154:17: error: ‘resultado2’ undeclared (first use in this functi
 exercises.c:154:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 063d3a0
+Fri 10 Mar 2023 03:31:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+bda4467
