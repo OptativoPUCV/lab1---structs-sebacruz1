@@ -272,3 +272,29 @@ Fri 10 Mar 2023 01:52:40 AM UTC:
  tests:  3|4
 total_score: 30/70
 4f53502
+Fri 10 Mar 2023 02:02:15 AM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   88 |   vector *temp = (vector *) malloc(n * sizeof(vector));
+      |   ^~~~~~
+      |   Vector
+exercises.c:88:19: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   88 |   vector *temp = (vector *) malloc(n * sizeof(vector));
+      |                   ^~~~~~
+      |                   Vector
+exercises.c:88:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:88:27: error: expected expression before ‘)’ token
+   88 |   vector *temp = (vector *) malloc(n * sizeof(vector));
+      |                           ^
+exercises.c:89:13: error: comparison between pointer and integer [-Werror]
+   89 |   if (*temp == NULL)
+      |             ^~
+exercises.c:92:10: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   92 |   return temp;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5886e17
