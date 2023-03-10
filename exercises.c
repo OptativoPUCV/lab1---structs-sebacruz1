@@ -135,7 +135,7 @@ void sumaV(Vector * a, Vector * b, Vector * c)
   for (int i = 0; i < a->capacidad; i++)
     {
       suma = a->datos[i] + b->datos[i];
-      c = suma;
+      c->datos[i] = suma;
       suma = 0;
     }
 }
