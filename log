@@ -406,3 +406,24 @@ Fri 10 Mar 2023 02:12:29 AM UTC:
  tests:  4|3
 total_score: 40/70
 35a12cc
+Fri 10 Mar 2023 02:13:19 AM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:121:22: error: expected ‘;’ before ‘return’
+  121 |   valor = v->datos[i]
+      |                      ^
+      |                      ;
+  122 | 
+  123 |    return valor;
+      |    ~~~~~~             
+exercises.c:119:7: error: variable ‘valor’ set but not used [-Werror=unused-but-set-variable]
+  119 |   int valor = 0;
+      |       ^~~~~
+exercises.c:124:1: error: control reaches end of non-void function [-Werror=return-type]
+  124 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ad5a2ac
