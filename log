@@ -298,3 +298,18 @@ exercises.c:92:10: error: returning ‘int *’ from a function with incompatibl
 cc1: all warnings being treated as errors
 Compilation failed
 5886e17
+Fri 10 Mar 2023 02:02:26 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:19: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   88 |   Vector *temp = (vector *) malloc(n * sizeof(vector));
+      |                   ^~~~~~
+      |                   Vector
+exercises.c:88:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:88:27: error: expected expression before ‘)’ token
+   88 |   Vector *temp = (vector *) malloc(n * sizeof(vector));
+      |                           ^
+Compilation failed
+802778d
