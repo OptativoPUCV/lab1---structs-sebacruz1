@@ -118,7 +118,7 @@ int obtenerValor(Vector * v, int i)
 {
   int valor = 0;
 
-  valor = v->datos[i]
+  valor = v->datos[i];
   
    return valor;
 }
